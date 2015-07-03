@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.example.verticalslideframe.VerticalSlideLayout
+        android:id="@+id/slidelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="#568425"
+              android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOTTOM"
+                android:textColor="#333"
+                android:textSize="18sp" />
+            <ImageView   android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/testimage"/>
+        </LinearLayout>
+		<RelativeLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+           
+            android:background="#009588"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOP"
+                android:textColor="#333"
+                android:textSize="18sp" />
+            <ListView android:id="@+id/listview"
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+                
+            
+        </RelativeLayout>
+    </com.example.verticalslideframe.VerticalSlideLayout>
+
+</RelativeLayout>
