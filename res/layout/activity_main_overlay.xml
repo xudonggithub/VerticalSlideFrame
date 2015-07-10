@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.example.verticalslideframe.VerticalOverlapSlideLayout
+        android:id="@+id/slidelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+       
+		<RelativeLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+           
+            android:background="#009588"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOTTOM"
+                android:textColor="#333"
+                android:textSize="18sp" />
+            <ListView android:id="@+id/listview"
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        
+		 <LinearLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="#568425"
+              android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOP"
+                android:textColor="#333"
+                android:textSize="18sp" />
+            <ImageView   android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/testimage"/>
+        </LinearLayout>
+    </com.example.verticalslideframe.VerticalOverlapSlideLayout>
+
+</RelativeLayout>
